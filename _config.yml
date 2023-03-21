@@ -1,5 +1,3 @@
-title: Slate theme
-description: Slate is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: Raccacoonie
+description: A recipe reviewer trained on 83,782 unique recipes &amp; their 234,429 reviews scraped from food.com
 theme: jekyll-theme-slate
