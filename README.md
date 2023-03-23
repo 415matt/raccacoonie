@@ -68,10 +68,15 @@ While these results weren't what I was hoping for, they show across the board im
 
 ---
 ## Fairness Analysis
-I decided to bin my data into when the recipe was made. This dataset contains the years 2008-2018, so I split my data into two groups 
+I decided to group my data into when the recipe was made. This dataset contains the years 2008-2018, so I split my data into two groups: 2008-2013 and 2014-2018.
 
-
+<br>
 
 **Null Hypothesis:** Our model is fair. Its precision for old recipes and new recipes are roughly the same,and any differences are due to random chance.
 
 **Alternative Hypothesis:** Our model is unfair. Its precision for new recipes is lower than its precision for old recipes.
+
+
+In order to test my hypothesis I will calculate my observed RMSE on the new recipes, permute the posting year, then calculate the porportion of values that are above the observed RMSE. My significance level to reject the null hypothesis is 5%.
+
+`P Value: 1.0` - thus we fail to reject the null hypothesis!1
